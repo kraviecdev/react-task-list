@@ -8,9 +8,8 @@ import Buttons from "./Buttons";
 import Container from "./Container";
 
 let tasks = [
-  { id: 1, content: "przenieść listę do reacta", done: true, },
-  { id: 2, content: "przespać się z tym", done: false, },
-  { id: 3, content: "test", done: true, },
+  { id: 1, content: "Transfer project to React", done: true, },
+  { id: 2, content: "Add functions to project", done: false, },
 ];
 
 let hideDoneTasks = false;
