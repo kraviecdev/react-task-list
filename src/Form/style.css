@@ -1,0 +1,32 @@
+.form {
+    padding: 15px;
+    display: flex;
+    gap: 10px
+}
+
+@media (max-width: 767px) {
+    .form {
+        flex-direction: column;
+    }
+}
+
+.form__input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid hsl(0, 0%, 90%);
+}
+
+.form__button {
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+    min-width: fit-content;
+    padding: 10px;
+    transition: 1s;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: hsl(180, 100%, 35%);
+}
