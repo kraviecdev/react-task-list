@@ -17,9 +17,12 @@ let hideDoneTasks = false;
 
 function App() {
   return (
-    <div classNameName="App">
-      <Container header={<Header />} section={<Section title="Add task" body={<Form />} />} section2={<Section title="List of tasks" body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />} extraButtons={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />} />} footer={<Footer name="Patryk Krawczyk" year="2021" />} />
-    </div>
+    <Container>
+      <Header title="Task List"/>
+      <Section title="Add task" body={<Form />} /> 
+      <Section title="List of tasks" body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />} extraButtons={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />} />
+      <Footer name="Patryk Krawczyk" year="2021" />
+    </Container>
   );
 }
 

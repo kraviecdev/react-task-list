@@ -1,13 +1,8 @@
 import "./style.css"
 
-const Container = ({header, section, section2, footer}) => (
+const Container = ({children}) => (
     <div className="container">
-        {header}
-        <main>
-            {section}
-            {section2}
-        </main>
-        {footer}
+        {children}
     </div>
 );
 
