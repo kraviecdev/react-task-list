@@ -8,7 +8,6 @@ const Section = ({ title, extraButtons, body }) => (
         </header>
             {body}
     </section>
-
 );
 
 export default Section;
