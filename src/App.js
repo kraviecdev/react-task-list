@@ -1,7 +1,6 @@
 import Form from "./Form";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./style.css"
 import Section from "./Section";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
