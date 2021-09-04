@@ -18,7 +18,7 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTaskDone }) => {
                 onClick={toggleHideDone}
                 className="button button--hideDone"
             >
-                {hideDoneTasks ? "Show" : "Hide"} done
+                {tasks.some(({done}) => done) && hideDoneTasks ? "Show" : "Hide"} done
             </button>
         </div>
     );
