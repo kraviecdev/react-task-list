@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Created: 02-09-2021
 - Updated: 04-09-2021
 
+# Demo
+[**Here you find demo**](https://patrick36212.github.io/react-task-list/)
+
 ![Gif](react-task-gif.gif)
 
 ## Technologies used in project
