@@ -9,10 +9,7 @@ import { useState } from "react";
 
 function App() {
   let [hideDoneTasks, setHideDoneTask] = useState(false);
-  let [tasks, setTasks] = useState([
-    { id: 1, content: "Transfer project to React", done: true, },
-    { id: 2, content: "Add functions to project", done: false, },
-  ]);
+  let [tasks, setTasks] = useState([]);
 
   const toggleHideDone = () => {
     setHideDoneTask(hideDoneTasks = !hideDoneTasks);
