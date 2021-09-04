@@ -7,19 +7,21 @@ import Buttons from "./Buttons";
 import Container from "./Container";
 import { useState } from "react";
 
-let tasks = [
-  { id: 1, content: "Transfer project to React", done: true, },
-  { id: 2, content: "Add functions to project", done: false, },
-];
-
-
 function App() {
   let [hideDoneTasks, setHideDoneTask] = useState(false);
-  let [markAllTasksDone] = useState(false)
+  let [tasks, setTasks] = useState([
+    { id: 1, content: "Transfer project to React", done: true, },
+    { id: 2, content: "Add functions to project", done: false, },
+  ]);
 
   const toggleHideDone = () => {
     setHideDoneTask(hideDoneTasks = !hideDoneTasks);
   };
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id));
+  };
+
 
   return (
     <Container>
@@ -32,6 +34,7 @@ function App() {
         title="List of tasks"
         body={
           <Tasks
+            removeTask={removeTask}
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
           />}
@@ -39,7 +42,7 @@ function App() {
           <Buttons
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
-            toggleHideDone={toggleHideDone}            
+            toggleHideDone={toggleHideDone}
           />}
       />
       <Footer name="Patryk Krawczyk" year="2021" />
