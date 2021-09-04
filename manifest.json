@@ -2,6 +2,13 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "start_url": ".",
+  "icons": [
+    {
+      "src": "to-do-list.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
