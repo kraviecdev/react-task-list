@@ -25,7 +25,7 @@ function App() {
   const toggleDoneTask = (id) => {
     setTasks(tasks => tasks.map(task => {
       if (task.id === id) {
-        return { ...task, done: !task.done }; 
+        return { ...task, done: !task.done };
       }
 
       return task;
@@ -39,12 +39,30 @@ function App() {
     })));
   };
 
+  const addNewTask = (newTaskContent) => {
+    if (newTaskContent === ""){
+      return;
+    } 
+    return (
+      setTasks(tasks => ([
+        ...tasks, 
+        { 
+          content: newTaskContent,
+          done: false,
+          id: tasks.length === 0 ? 1 : tasks[tasks.length -1].id +1,
+        },
+      ]))
+    );
+  };
+
   return (
     <Container>
       <Header title="Task List" />
       <Section
         title="Add task"
-        body={<Form />}
+        body={<Form
+          addNewTask={addNewTask} 
+        />}
       />
       <Section
         title="List of tasks"
