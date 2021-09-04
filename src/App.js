@@ -32,6 +32,13 @@ function App() {
     }));
   };
 
+  const markAllTaskDone = () => {
+    setTasks(tasks => tasks.map(task => ({
+      ...task,
+      done: true,
+    })));
+  };
+
   return (
     <Container>
       <Header title="Task List" />
@@ -53,6 +60,7 @@ function App() {
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
             toggleHideDone={toggleHideDone}
+            markAllTaskDone={markAllTaskDone}
           />}
       />
       <Footer name="Patryk Krawczyk" year="2021" />

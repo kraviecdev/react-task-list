@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks, toggleHideDone }) => {
+const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTaskDone }) => {
 
     if (tasks.length === 0) {
         return null;
@@ -8,6 +8,7 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDone }) => {
     return (
         <div className="section__buttons">
             <button
+                onClick={markAllTaskDone}
                 disabled={(tasks.every(({ done }) => done))}
                 className="button button--selectAll"
             >
