@@ -70,7 +70,7 @@ function App() {
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
           />}
-        extraButtons={
+          additionalContent={
           <Buttons
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
