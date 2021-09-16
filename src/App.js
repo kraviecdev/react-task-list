@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function App() {
   let [hideDoneTasks, setHideDoneTask] = useState(false);
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("storedTasks")));
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("storedTasks")) || []);
 
   const toggleHideDone = () => {
     setHideDoneTask(hideDoneTasks = !hideDoneTasks);
