@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledButton, StyledButtonSection } from "./styled";
 
 const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTaskDone }) => {
 
@@ -6,21 +6,21 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTaskDone }) => {
         return null;
     }
     return (
-        <div className="section__buttons">
-            <button
+        <StyledButtonSection>
+            <StyledButton
                 onClick={markAllTaskDone}
                 disabled={(tasks.every(({ done }) => done))}
-                className="button button--selectAll"
+                selectAll
             >
                 Mark all as done
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
                 onClick={toggleHideDone}
-                className="button button--hideDone"
+                hideDone
             >
                 {tasks.some(({done}) => done) && hideDoneTasks ? "Show" : "Hide"} done
-            </button>
-        </div>
+            </StyledButton>
+        </StyledButtonSection>
     );
 };
 
