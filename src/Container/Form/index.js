@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyledButton } from "../Section/Buttons/styled";
+import { StyledButton } from "../Buttons/styled";
 import { StyledForm, StyledInput } from "./styled";
 
 const Form = ({ addNewTask }) => {

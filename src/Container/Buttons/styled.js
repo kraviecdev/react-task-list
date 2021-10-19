@@ -76,6 +76,21 @@ export const StyledButton = styled.button`
             cursor: auto;
         }
     `}
+
+    ${({ form }) => form && css`
+        background-color: hsl(180, 100%, 25%);
+        color: white;
+        border: none;
+        min-width: fit-content;
+        padding: 10px;
+        transition: 1s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.08);
+            background-color: hsl(180, 100%, 35%);
+        }
+    `}
 `;
 
 export const StyledButtonSection = styled.div`
