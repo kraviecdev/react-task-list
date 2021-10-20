@@ -29,7 +29,8 @@ function App() {
       <Header title="Task List" />
       <Section
         title="Add task"
-        body={<Form
+        body=
+        {<Form
           addNewTask={addNewTask}
         />}
       />
