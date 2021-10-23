@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Author: Patryk Krawczyk
 - Created: 02-09-2021
-- Updated: 04-09-2021
+- Updated: 23-10-2021
 
 # Demo
 [**Here you find demo**](https://patrick36212.github.io/react-task-list/)
@@ -23,7 +23,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Immiutability
 - Babel
 - React
+- Styled Components
 - useState
+- useEffect
+- useRef
+- GlobalStyles & Theme
 
 ## How to use?
 
