@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import Form from "./Container/Form";
-import Header from "./Container/Header";
-import Footer from "./Container/Footer";
-import Section from "./Container/Section";
-import Tasks from "./Container/Tasks";
-import Buttons from "./Container/Buttons";
+import Form from "./Form";
+import Header from "./Header";
+import Footer from "./Footer";
+import Section from "./Section";
+import Tasks from "./Tasks";
+import Buttons from "./Buttons";
 import Container from "./Container";
 import { useTasks } from "./useTasks";
 
