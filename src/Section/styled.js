@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-    background-color: hsl(0, 0%, 100%);
+    background-color: ${({ theme }) => theme.color.white};
     margin: 20px auto;
 `;
 
 export const StyledSectionHeader = styled.header`
-    border-bottom: 2px solid hsl(0, 0%, 90%);
+    border-bottom: 2px solid ${({ theme }) => theme.color.platinum};
     display: flex;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-direction: column;
         text-align: center;
     }
