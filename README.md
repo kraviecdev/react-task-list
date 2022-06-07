@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Author: Patryk Krawczyk
 - Created: 02-09-2021
-- Updated: 23-10-2021
+- Updated: 07-06-2022
 
 # Demo
 [**Here you find demo**](https://patrick36212.github.io/react-task-list/)
@@ -28,6 +28,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - useEffect
 - useRef
 - GlobalStyles & Theme
+- React-Redux
 
 ## How to use?
 
