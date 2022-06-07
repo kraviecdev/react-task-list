@@ -5,12 +5,12 @@ import Form from "./Form";
 import Header from "../../common/Header";
 import Footer from "../../common/Footer";
 import Section from "../../common/Section";
-import TasksList from "./Tasks";
-import Buttons from "./Buttons";
 import Container from "../../common/Container";
+import TasksList from "./TasksList";
+import Buttons from "./Buttons";
 
 
-function Tasks() {
+const Tasks = () => {
   let [hideDoneTasks, setHideDoneTask] = useState(false);
 
   const toggleHideDone = () => {
