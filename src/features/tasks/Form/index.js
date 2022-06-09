@@ -9,15 +9,17 @@ const Form = () => {
 
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
+    const trimmedNewTaskConent = newTaskContent.trim();
+    
     const dispatch = useDispatch();
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        if (newTaskContent === "") {
+        if (trimmedNewTaskConent === "") {
             return;
         };
         dispatch(addTasks({
-            content: newTaskContent.trim(),
+            content: trimmedNewTaskConent,
             done: false,
             id: nanoid(),
         }));
