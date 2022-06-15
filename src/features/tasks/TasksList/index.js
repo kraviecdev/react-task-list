@@ -1,6 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
 import { StyledButton } from "../Buttons/styled";
-import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../tasksSlice";
+import {
+    selectTasks,
+    toggleTaskDone,
+    removeTask,
+    selectHideDone
+} from "../tasksSlice";
 import { StyledContent, StyledList, StyledTask } from "./styled";
 
 const TasksList = () => {
@@ -9,40 +14,40 @@ const TasksList = () => {
     const dispatch = useDispatch();
 
     return (
-    <StyledList>
-        {tasks.map(task => (
-            <StyledTask
-                key={task.id}
-                hidden={task.done && hideDone}
-            >
-                <StyledButton
-                    onClick={() => dispatch(toggleTaskDone(task.id))}
-                    done={task.done}
-                    complete
+        <StyledList>
+            {tasks.map(task => (
+                <StyledTask
+                    key={task.id}
+                    hidden={task.done && hideDone}
                 >
-                    <i
-                        className="material-icons md-24"
+                    <StyledButton
+                        onClick={() => dispatch(toggleTaskDone(task.id))}
+                        done={task.done}
+                        complete
                     >
-                        task_alt
-                    </i>
-                </StyledButton>
-                <StyledContent
-                    done={task.done}>
-                    {task.content}
-                </StyledContent>
-                <StyledButton
-                    onClick={() => dispatch(removeTask())}
-                    remove
-                >
-                    <i
-                        className="material-icons md-24"
+                        <i
+                            className="material-icons md-24"
+                        >
+                            task_alt
+                        </i>
+                    </StyledButton>
+                    <StyledContent
+                        done={task.done}>
+                        {task.content}
+                    </StyledContent>
+                    <StyledButton
+                        onClick={() => dispatch(removeTask(task.id))}
+                        remove
                     >
-                        delete
-                    </i>
-                </StyledButton>
-            </StyledTask>
-        ))}
-    </StyledList >
+                        <i
+                            className="material-icons md-24"
+                        >
+                            delete
+                        </i>
+                    </StyledButton>
+                </StyledTask>
+            ))}
+        </StyledList >
     );
 };
 

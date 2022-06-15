@@ -1,12 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectHideDone, toggleHideDone, markAllTaskDone, selectIsListEmpty, selectAreAllTasksDone, selectAreSomeTasksDone, selectIsAnyTaskDone } from "../tasksSlice";
+import {
+    selectHideDone,
+    toggleHideDone,
+    markAllTaskDone,
+    selectIsListEmpty,
+    selectAreAllTasksDone,
+    selectIsAnyTaskDone
+} from "../tasksSlice";
 import { StyledButton, StyledButtonSection } from "./styled";
 
 const Buttons = () => {
     const hideDone = useSelector(selectHideDone);
     const isListEmpty = useSelector(selectIsListEmpty);
     const areEveryTasksDone = useSelector(selectAreAllTasksDone);
-    const areSomeTasksDone = useSelector(selectAreSomeTasksDone);
     const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
 
     const dispatch = useDispatch();
@@ -25,7 +31,7 @@ const Buttons = () => {
                 hideDone
                 disabled={!isAnyTaskDone}
             >
-                {areSomeTasksDone && hideDone ? "Show" : "Hide"} done
+                {isAnyTaskDone && hideDone ? "Show" : "Hide"} done
             </StyledButton>
         </StyledButtonSection>
     );
