@@ -5,7 +5,8 @@ import {
     markAllTaskDone,
     selectIsListEmpty,
     selectAreAllTasksDone,
-    selectIsAnyTaskDone
+    selectIsAnyTaskDone,
+    fetchExampleTasks
 } from "../tasksSlice";
 import { StyledButton, StyledButtonSection } from "./styled";
 
@@ -17,23 +18,33 @@ const Buttons = () => {
 
     const dispatch = useDispatch();
 
-    return (!isListEmpty &&
+    return (
         <StyledButtonSection>
             <StyledButton
-                onClick={() => dispatch(markAllTaskDone())}
-                disabled={areEveryTasksDone}
-                selectAll
+                standard
+                onClick={() => dispatch(fetchExampleTasks())}
             >
-                Mark all as done
+                Example Tasks
             </StyledButton>
-            <StyledButton
-                onClick={() => dispatch(toggleHideDone())}
-                hideDone
-                disabled={!isAnyTaskDone}
-            >
-                {isAnyTaskDone && hideDone ? "Show" : "Hide"} done
-            </StyledButton>
+            {!isListEmpty && (
+                <>
+                    <StyledButton
+                        onClick={() => dispatch(markAllTaskDone())}
+                        disabled={areEveryTasksDone}
+                        standard
+                    >
+                        Mark all as done
+                    </StyledButton>
+                    <StyledButton
+                        onClick={() => dispatch(toggleHideDone())}
+                        hideDone
+                        disabled={!isAnyTaskDone}
+                    >
+                        {isAnyTaskDone && hideDone ? "Show" : "Hide"} done
+                    </StyledButton>
+                </>)}
         </StyledButtonSection>
+
     );
 };
 

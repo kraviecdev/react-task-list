@@ -28,6 +28,10 @@ const tasksSlice = createSlice({
         handleNewTaskContent: (state, action) => {
             state.newTaskContent = action.payload;
         },
+        fetchExampleTasks: () => { },
+        setTasks: (state, {payload: tasks}) => {
+            state.tasks = tasks;
+        },
     }
 });
 
@@ -38,6 +42,8 @@ export const {
     removeTask,
     markAllTaskDone,
     handleNewTaskContent,
+    fetchExampleTasks,
+    setTasks,
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;

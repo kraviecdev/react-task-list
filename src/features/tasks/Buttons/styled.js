@@ -42,7 +42,7 @@ export const StyledButton = styled.button`
         }
     `}
 
-    ${({ selectAll }) => selectAll && css`
+    ${({ standard }) => standard && css`
         padding: 5px;
         color: ${({ theme }) => theme.color.teal};
         transition: 1s;
