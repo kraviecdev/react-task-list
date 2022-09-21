@@ -46,6 +46,7 @@ export const StyledButton = styled.button`
         padding: 5px;
         color: ${({ theme }) => theme.color.teal};
         transition: 1s;
+        min-width: 127px;
 
         &:hover {
             filter: brightness(110%);
