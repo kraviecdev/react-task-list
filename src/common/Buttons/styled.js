@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledButton = styled.button`
+    color: ${({ theme }) => theme.colors.colorPrimary};
     background-color: transparent;
     border: none;
 
@@ -9,7 +10,7 @@ export const StyledButton = styled.button`
     }
 
     ${({ complete }) => complete && css`
-        transition: 1s;
+        transition: .7s;
 
         &:hover {
             color: ${({ theme }) => theme.colors.backgroundPrimary};

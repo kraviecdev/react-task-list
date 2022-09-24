@@ -1,26 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import { Provider } from 'react-redux';
-import { GlobalStyle } from './GlobalStyle';
 import reportWebVitals from './reportWebVitals';
-import { light } from './theme';
-import { ThemeProvider } from 'styled-components';
-import store from './store';
-
 import App from './App';
-import Footer from './common/Footer';
-import Header from './common/Header';
+import { Provider } from 'react-redux';
+import store from './store';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ThemeProvider theme={light}>
-        <GlobalStyle />
-        <Header title={"Tasks List"}/>
-        <App />
-        <Footer />
-      </ThemeProvider>
+      <App />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

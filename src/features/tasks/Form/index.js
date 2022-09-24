@@ -1,7 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit";
 import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { StyledButton } from "../Buttons/styled";
+import { StyledButton } from "../../../common/Buttons/styled";
 import { addTasks, selectNewTaskContent, handleNewTaskContent } from "../tasksSlice";
 import { StyledForm, StyledInput } from "./styled";
 

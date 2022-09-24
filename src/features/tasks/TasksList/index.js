@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { StyledButton } from "../Buttons/styled";
+import { StyledButton } from "../../../common/Buttons/styled";
 import {
     selectTasks,
     toggleTaskDone,

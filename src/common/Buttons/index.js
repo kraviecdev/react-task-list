@@ -7,7 +7,7 @@ import {
     selectAreAllTasksDone,
     selectIsAnyTaskDone,
     fetchExampleTasks
-} from "../tasksSlice";
+} from "../../features/tasks/tasksSlice";
 import { StyledButton, StyledButtonSection } from "./styled";
 
 const Buttons = () => {

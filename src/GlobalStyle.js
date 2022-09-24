@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     html {
         background-color: ${({ theme }) => theme.colors.backgroundAddPrimary};
+        color: ${({theme}) => theme.colors.colorPrimary};
         box-sizing: border-box;  
     }
 

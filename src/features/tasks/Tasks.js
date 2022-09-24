@@ -2,7 +2,7 @@ import Form from "./Form";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
 import TasksList from "./TasksList";
-import Buttons from "./Buttons";
+import Buttons from "../../common/Buttons";
 
 const Tasks = () => {
   return (
