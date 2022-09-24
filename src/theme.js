@@ -1,15 +1,30 @@
-export const theme = {
-    color: {
-        white: "#fff",
-        platinum: "#E6E6E6",
-        green: "#00B300",
-        red: "#FF0000",
-        black: "#000000",
-        teal: "#008080",
-        grey: "#DEDEDE"
+const breakpoints = {
+    medium: 768,
+    extraLarge: 1300,
+  };
+
+export const light = {
+    breakpoints,
+    colors: {
+        backgroundPrimary: "#ffffff",
+        backgroundAddPrimary: "#E6E6E6",
+        colorPrimary: "#000000",
+        colorSeconadry: "#DEDEDE",
+        buttonPrimary: "#008080",
+        buttonMarkAsDone: "#00B300",
+        buttonDelete: "#FF0000", 
     },
-    breakpoint: {
-        mobileMax: 767,
-        maxWidth: 1280,
+};
+
+export const dark = {
+    breakpoints,
+    colors: {
+        backgroundPrimary: "#ffffff",
+        backgroundAddPrimary: "#E6E6E6",
+        colorPrimary: "#000000",
+        colorSeconadry: "#DEDEDE",
+        buttonPrimary: "#008080",
+        buttonMarkAsDone: "#00B300",
+        buttonDelete: "#FF0000",
     },
 };

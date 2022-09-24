@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
     display: flex;
     gap: 10px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         flex-direction: column;
     }
 `;
@@ -13,5 +13,5 @@ export const StyledForm = styled.form`
 export const StyledInput = styled.input`
     padding: 10px;
     width: 100%;
-    border: 2px solid ${({ theme }) => theme.color.platinum};
+    border: 2px solid ${({ theme }) => theme.colors.backgroundAddPrimary};
 `;

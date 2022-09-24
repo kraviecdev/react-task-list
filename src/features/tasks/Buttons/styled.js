@@ -12,15 +12,15 @@ export const StyledButton = styled.button`
         transition: 1s;
 
         &:hover {
-            color: ${({ theme }) => theme.color.white};
-            background-color: ${({ theme }) => theme.color.green};
+            color: ${({ theme }) => theme.colors.backgroundPrimary};
+            background-color: ${({ theme }) => theme.colors.buttonMarkAsDone};
             border-radius: 15px;
         }
     `}
 
     ${({ done }) => done && css`
-        background-color: ${({ theme }) => theme.color.green};
-        color: ${({ theme }) => theme.color.white};
+        background-color: ${({ theme }) => theme.colors.buttonMarkAsDone};
+        color: ${({ theme }) => theme.colors.backgroundPrimary};
         border-radius: 15px;
 
         &:hover {
@@ -32,19 +32,19 @@ export const StyledButton = styled.button`
         transition: 1s;
 
         &:hover {
-            background-color: ${({ theme }) => theme.color.red};
-            color: ${({ theme }) => theme.color.white};
+            background-color: ${({ theme }) => theme.colors.buttonDelete};
+            color: ${({ theme }) => theme.colors.backgroundPrimary};
             border-radius: 15px;
         }
 
         &:active {
-            color: ${({ theme }) => theme.color.black};
+            color: ${({ theme }) => theme.colors.colorPrimary};
         }
     `}
 
     ${({ standard }) => standard && css`
         padding: 5px;
-        color: ${({ theme }) => theme.color.teal};
+        color: ${({ theme }) => theme.colors.buttonPrimary};
         transition: 1s;
         min-width: 127px;
 
@@ -53,11 +53,11 @@ export const StyledButton = styled.button`
         }
 
         &:active {
-            color: ${({ theme }) => theme.color.black};
+            color: ${({ theme }) => theme.colors.colorPrimary};
         }
 
         &:disabled {
-            color: ${({ theme }) => theme.color.grey};
+            color: ${({ theme }) => theme.colors.colorSeconadry};
             cursor: auto;
         }
     `}
@@ -65,7 +65,7 @@ export const StyledButton = styled.button`
     ${({ hideDone }) => hideDone && css`
         min-width: 127px;
         padding: 5px;
-        color: ${({ theme }) => theme.color.teal};
+        color: ${({ theme }) => theme.colors.buttonPrimary};
         transition: 1s;
 
         &:hover {
@@ -73,18 +73,18 @@ export const StyledButton = styled.button`
         }
 
         &:active {
-            color: ${({ theme }) => theme.color.black};
+            color: ${({ theme }) => theme.colors.colorPrimary};
         }
 
         &:disabled {
-            color: ${({ theme }) => theme.color.grey};
+            color: ${({ theme }) => theme.colors.colorSeconadry};
             cursor: auto;
         }
     `}
 
     ${({ form }) => form && css`
-        background-color: ${({ theme }) => theme.color.teal};
-        color: ${({ theme }) => theme.color.white};
+        background-color: ${({ theme }) => theme.colors.buttonPrimary};
+        color: ${({ theme }) => theme.colors.backgroundPrimary};
         border: none;
         min-width: fit-content;
         padding: 10px;
@@ -102,7 +102,7 @@ export const StyledButtonSection = styled.div`
     display: flex;
     gap: 20px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;

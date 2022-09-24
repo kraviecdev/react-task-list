@@ -10,7 +10,7 @@ export const StyledTask = styled.li`
     display: flex;
     padding: 5px;
     margin-top: 10px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.grey};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.colorSeconadry};
 
     ${({ hidden }) => hidden && css`
         display: none;

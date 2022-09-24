@@ -23,7 +23,7 @@ const Form = () => {
             done: false,
             id: nanoid(),
         }));
-        // setNewTaskContent("");
+        dispatch(handleNewTaskContent(""));
         inputRef.current.focus();
     };
 
