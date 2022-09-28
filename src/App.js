@@ -4,7 +4,7 @@ import Footer from "./common/Footer"
 import Tasks from "./features/tasks/Tasks";
 
 import { useSelector } from "react-redux";
-import { selectIsDarkTheme } from "./common/Header/ThemeSwitch/themeSlice";
+import { selectIsDarkTheme } from "./common/ThemeSwitch/themeSlice";
 import { dark, light } from "./theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";

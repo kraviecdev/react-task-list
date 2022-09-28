@@ -1,5 +1,5 @@
 import { StyledHeader, StyledTitle } from "./styled";
-import { ThemeSwitch } from "./ThemeSwitch";
+import { ThemeSwitch } from "../ThemeSwitch";
 
 const Header = ({ title }) => (
     <StyledHeader>
