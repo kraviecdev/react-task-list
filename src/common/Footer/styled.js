@@ -10,9 +10,8 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledFooterWrapper = styled.div`
-    max-width: 1300px;
     margin: 30px auto 0;
-    padding: 12px 0;
+    padding: 12px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
         max-width: 100%;

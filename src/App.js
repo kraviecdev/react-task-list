@@ -8,6 +8,7 @@ import { selectIsDarkTheme } from "./common/ThemeSwitch/themeSlice";
 import { dark, light } from "./theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
+import Navbar from "./common/Navbar";
 
 const App = () => {
     const isDarkTheme = useSelector(selectIsDarkTheme);
@@ -15,7 +16,9 @@ const App = () => {
     return (
         <ThemeProvider theme={isDarkTheme ? dark : light}>
             <GlobalStyle />
-            <Header title={"Tasks List"} />
+            <Header title={"Tasks List"} 
+                children={<Navbar />}
+            />
             <Tasks />
             <Footer />
         </ThemeProvider>

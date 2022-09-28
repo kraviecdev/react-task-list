@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme, selectIsDarkTheme } from "./themeSlice";
 import { Button, Info, SwitchBody, IconBody} from "./styled";
 
-export const ThemeSwitch = () => {
+const ThemeSwitch = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
   const dispatch = useDispatch();
 
@@ -22,3 +22,5 @@ export const ThemeSwitch = () => {
       </Button>
   );
 };
+
+export default ThemeSwitch;
