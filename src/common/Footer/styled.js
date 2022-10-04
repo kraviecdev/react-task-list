@@ -3,13 +3,13 @@ import { ReactComponent as Github } from "./github.svg";
 import { ReactComponent as LinkedIn } from "./linkedin.svg";
 
 export const StyledFooter = styled.footer`
-    
     width: 100%;
     color: ${({ theme }) => theme.colors.colorPrimary};
     background: ${({ theme }) => theme.colors.backgroundPrimary};
 `;
 
 export const StyledFooterWrapper = styled.div`
+    max-width: 1420px;
     margin: 30px auto 0;
     padding: 12px;
 
