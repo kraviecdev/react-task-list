@@ -16,11 +16,7 @@ export const Info = styled.p`
   line-height: 1.3;
   margin: 0px 12px 0px 0px;
   text-transform: uppercase;
-  display: none;
-
-  @media(min-width: ${({ theme }) => theme.breakpoints.medium}px) {
-    display: block;
-  }
+  display: block;
 `;
 
 export const SwitchBody = styled.span`
