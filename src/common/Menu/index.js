@@ -1,12 +1,11 @@
 import { useSelector } from "react-redux";
+import { selectIsMenuOpen } from "./menuSlice";
+
 import ThemeSwitch from "../ThemeSwitch";
-import { selectIsOpen } from "./menuSlice";
 import { StyledMenu, StyledMenuLink, StyledNavBox, StyledNavItemBox } from "./styled";
 
 const Menu = () => {
-    const isOpen = useSelector(selectIsOpen);
-
-    console.log(isOpen);
+    const isOpen = useSelector(selectIsMenuOpen);
 
     return (
         <StyledMenu
