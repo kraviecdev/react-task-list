@@ -1,9 +1,12 @@
+import Menu from "../Menu";
+import Burger from "../Burger";
 import { StyledHeader, StyledTitle } from "./styled";
 
-const Header = ({ title, children }) => (
+const Header = ({ title }) => (
     <StyledHeader>
         <StyledTitle>{title}</StyledTitle>
-        {children}
+        <Burger />
+        <Menu />
     </StyledHeader>
 );
 
