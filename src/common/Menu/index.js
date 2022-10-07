@@ -5,11 +5,11 @@ import ThemeSwitch from "../ThemeSwitch";
 import { StyledMenu, StyledMenuLink, StyledNavBox, StyledNavItemBox } from "./styled";
 
 const Menu = () => {
-    const isOpen = useSelector(selectIsMenuOpen);
+    const isMenuOpen = useSelector(selectIsMenuOpen);
 
     return (
         <StyledMenu
-            active={isOpen}
+            active={isMenuOpen}
         >
             <StyledNavBox>
                 <StyledMenuLink>

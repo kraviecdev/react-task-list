@@ -50,7 +50,12 @@ export const StyledNavItemBox = styled.span`
     }
 
     ${({ themeSwitch }) => themeSwitch && css`
-        border: none;
+        border: none; 
+
+        &:hover {
+            border-bottom: none;
+            border-top: none;
+        }
     `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){

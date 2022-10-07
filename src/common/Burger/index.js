@@ -1,16 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenu, selectIsMenuOpen } from "../Menu/menuSlice";
+import { selectIsMenuOpen, toggleMenuState } from "../Menu/menuSlice";
 import { StyledBurger, StyledBurgerSwitch } from "./styled";
 
 const Burger = () => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
-
-    console.log(isMenuOpen);
     const dispatch = useDispatch();
 
     return (
         <StyledBurger
-            onClick={() => dispatch(toggleMenu())}
+            onClick={() => dispatch(toggleMenuState())}
         >
             <StyledBurgerSwitch
                 active={isMenuOpen}
