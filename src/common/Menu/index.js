@@ -2,30 +2,28 @@ import { useSelector } from "react-redux";
 import { selectIsMenuOpen } from "./menuSlice";
 
 import ThemeSwitch from "../ThemeSwitch";
-import { StyledMenu, StyledMenuLink, StyledNavBox, StyledNavItemBox } from "./styled";
+import Burger from "../Burger";
+import { StyledMenu, StyledNavBox, StyledNavItemBox } from "./styled";
 
-const Menu = () => {
+const Menu = ({ home, tools, about }) => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
 
     return (
-        <StyledMenu
-            active={isMenuOpen}
-        >
-            <StyledNavBox>
-                <StyledMenuLink>
-                    <StyledNavItemBox>Home</StyledNavItemBox>
-                </StyledMenuLink>
-                <StyledMenuLink>
-                    <StyledNavItemBox>Tools</StyledNavItemBox>
-                </StyledMenuLink>
-                <StyledMenuLink>
-                    <StyledNavItemBox>About</StyledNavItemBox>
-                </StyledMenuLink>
-            </StyledNavBox>
-            <StyledNavItemBox themeSwitch>
-                <ThemeSwitch />
-            </StyledNavItemBox>
-        </StyledMenu>
+        <>
+            <Burger />
+            <StyledMenu
+                active={isMenuOpen}
+            >
+                <StyledNavBox>
+                    <StyledNavItemBox>{home}</StyledNavItemBox>
+                    <StyledNavItemBox>{about}</StyledNavItemBox>
+                    <StyledNavItemBox>{tools}</StyledNavItemBox>
+                </StyledNavBox>
+                <StyledNavItemBox themeSwitch>
+                    <ThemeSwitch />
+                </StyledNavItemBox>
+            </StyledMenu>
+        </>
     )
 };
 

@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const StyledMenu = styled.nav`
     padding: 10px;
@@ -71,13 +72,15 @@ export const StyledNavItemBox = styled.span`
     }
 `;
 
-export const StyledMenuLink = styled.a`
+export const StyledNavLink = styled(NavLink)`
     cursor: pointer;
     font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
     color: ${({ theme }) => theme.colors.buttonPrimary};
+    transition: .7s;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
-        width: 65%;
+    &:hover{
+        color: ${({ theme }) => theme.colors.colorPrimary};
     }
 `;
