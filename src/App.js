@@ -12,6 +12,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import { Route, HashRouter, Switch } from "react-router-dom";
 import { StyledNavLink } from "./common/Menu/styled";
+import ApplicationInfo from "./features/tools/ApplicationInfo";
 
 
 const App = () => {
@@ -27,12 +28,16 @@ const App = () => {
                         <Menu
                             home={<StyledNavLink to={"/"}>Home</StyledNavLink>}
                             about={<StyledNavLink to={"/author"}>Author</StyledNavLink>}
+                            tools={<StyledNavLink to={"/app_info"}>Application Info</StyledNavLink>}
                         />
                     }
                 />
                 <Switch>
                     <Route path={"/author"} >
                         <Author />
+                    </Route>
+                    <Route path={"/app_info"}>
+                        <ApplicationInfo />
                     </Route>
                     <Route path={"/"} >
                         <Tasks />
