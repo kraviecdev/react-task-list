@@ -6,7 +6,6 @@ import {
     selectIsListEmpty,
     selectAreAllTasksDone,
     selectIsAnyTaskDone,
-    fetchExampleTasks
 } from "../../features/tasks/tasksSlice";
 import { StyledButton, StyledButtonSection } from "./styled";
 
@@ -20,12 +19,6 @@ const Buttons = () => {
 
     return (
         <StyledButtonSection>
-            <StyledButton
-                standard
-                onClick={() => dispatch(fetchExampleTasks())}
-            >
-                Example Tasks
-            </StyledButton>
             {!isListEmpty && (
                 <>
                     <StyledButton
