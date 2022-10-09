@@ -1,8 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledSection = styled.section`
     background-color: ${({ theme }) => theme.colors.backgroundPrimary};
     margin: 20px auto;
+
+    ${({ additionalSection }) => additionalSection && css`
+        background-color: transparent;
+    `}
 `;
 
 export const StyledSectionHeader = styled.header`

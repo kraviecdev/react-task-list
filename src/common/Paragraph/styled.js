@@ -5,4 +5,5 @@ export const StyledParagraph = styled.p`
     padding: 10px 15px;
     text-align: justify;
     font-size: 20px;
+    white-space: break-spaces;
 `;
