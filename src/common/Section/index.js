@@ -1,6 +1,6 @@
 import { StyledSection, StyledSectionHeader, StyledSubheader } from "./styled";
 
-const Section = ({ title, additionalContent, body, additionalBody, additionalSection }) => {
+const Section = ({ title, additionalContent, body }) => {
     return (
         <>
             <StyledSection>
@@ -10,11 +10,6 @@ const Section = ({ title, additionalContent, body, additionalBody, additionalSec
                 </StyledSectionHeader>
                 {body}
             </StyledSection>
-            {additionalSection && (
-                < StyledSection additionalSection>
-                    {additionalBody}
-                </StyledSection>
-            )}
         </>
     )
 };

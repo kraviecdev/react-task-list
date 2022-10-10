@@ -6,4 +6,17 @@ export const StyledParagraph = styled.p`
     text-align: justify;
     font-size: 20px;
     white-space: break-spaces;
+    line-height: 32px;
+`;
+
+export const StyledParagraphLink = styled.a`
+    text-decoration: none;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.buttonPrimary};
+    transition: .7s;
+    cursor: pointer;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.colorPrimary};
+    };
 `;
