@@ -2,6 +2,7 @@ import Container from "../../common/Container";
 import Paragraph from "../../common/Paragraph";
 import Section from "../../common/Section";
 import { StyledParagraphLink } from "../../common/Paragraph/styled";
+import About from "./About";
 
 const Author = () => {
     return (
@@ -19,6 +20,7 @@ const Author = () => {
                         </span>} />
                 }
             />
+            <About />
         </Container>
     );
 };
