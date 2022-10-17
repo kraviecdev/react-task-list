@@ -6,6 +6,9 @@ export const StyledSection = styled.section`
 
     ${({ additionalSection }) => additionalSection && css`
         background-color: transparent;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        align-items: end;
     `}
 `;
 
