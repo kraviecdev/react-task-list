@@ -9,7 +9,31 @@ export const StyledSection = styled.section`
         display: grid;
         grid-template-columns: 280px 1fr;
         align-items: end;
-    `}
+    `};
+
+    
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    };
+
+    :first-child {
+        animation: fadeInLeft .7s;
+    }
+
+    :nth-child(2) {
+        animation: fadeInLeft 1s;
+    }
+
+    :nth-child(3) {
+        animation: fadeInLeft 1.3s;
+    }
 `;
 
 export const StyledSectionHeader = styled.header`
