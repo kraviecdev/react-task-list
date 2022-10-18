@@ -8,5 +8,13 @@ export const StyledImg = styled.img`
 
 export const StyledAuthorInfo = styled.span`
     padding: 5px 10px;
-    line-height: 28px;
+    font-size: 20px;
+    white-space: break-spaces;
+    line-height: 32px;
+`;
+
+export const StyledAuthorContainer = styled.div`
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        align-items: end;
 `;
