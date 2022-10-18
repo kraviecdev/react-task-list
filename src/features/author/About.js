@@ -2,13 +2,13 @@ import Container from "../../common/Container";
 import Paragraph from "../../common/Paragraph";
 import Section from "../../common/Section";
 import { StyledParagraphLink } from "../../common/Paragraph/styled";
-import About from "./About";
+import Author from "./Author";
 
-const Author = () => {
+const About = () => {
     return (
         <Container>
             <Section
-                title={"Author"}
+                title={"About"}
                 body={
                     <Paragraph description={
                         <span>I am a Front-End Developer out of love and passion. I am trying to spent every spare time to have more practise in it. &#9994;
@@ -20,9 +20,9 @@ const Author = () => {
                         </span>} />
                 }
             />
-            <About />
+            <Author />
         </Container>
     );
 };
 
-export default Author;
+export default About;
