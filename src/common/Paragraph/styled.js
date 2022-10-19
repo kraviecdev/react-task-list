@@ -7,6 +7,11 @@ export const StyledParagraph = styled.p`
     font-size: 20px;
     white-space: break-spaces;
     line-height: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+        font-size: 14px;
+        line-height: 26px;
+    }
 `;
 
 export const StyledParagraphLink = styled.a`
