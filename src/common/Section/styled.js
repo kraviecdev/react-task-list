@@ -20,16 +20,23 @@ export const StyledSection = styled.section`
         }
     };
 
-    :first-child {
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    };
+
+    :nth-child(odd) {
         animation: fadeInLeft .7s;
     }
 
-    :nth-child(2) {
-        animation: fadeInLeft 1s;
-    }
-
-    :nth-child(3) {
-        animation: fadeInLeft 1.3s;
+    :nth-child(even) {
+        animation: fadeInRight .7s;
     }
 `;
 
