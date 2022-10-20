@@ -1,43 +1,56 @@
-import { StyledParagraphLink } from "../../../common/Paragraph/styled";
 import { StyledSection } from "../../../common/Section/styled";
-import { StyledLibrariesList, StyledLibrariesName } from "./styled";
+import { StyledLibrariesContainer, StyledLibrariesFrame, StyledLibrariesName, StyledLibraryContainer } from "./styled";
 
 
 const AppInfo = () => {
     return (
         <StyledSection additionalSection>
-            <StyledLibrariesList>
-                <StyledParagraphLink>
-                    <StyledLibrariesName>
-                        Styled Components
-                    </StyledLibrariesName>
-                </StyledParagraphLink>
-                <StyledParagraphLink>
+            <StyledLibrariesContainer>
+                <StyledLibraryContainer>
                     <StyledLibrariesName>
                         React
                     </StyledLibrariesName>
-                </StyledParagraphLink>
-                <StyledParagraphLink>
+                    <StyledLibrariesFrame
+                        src="https://reactjs.org/"
+                    />
+                </StyledLibraryContainer>
+
+                <StyledLibraryContainer>
                     <StyledLibrariesName>
                         React-Redux
                     </StyledLibrariesName>
-                </StyledParagraphLink>
-                <StyledParagraphLink>
+                    <StyledLibrariesFrame
+                        src="https://reactjs.org/"
+                    />
+                </StyledLibraryContainer>
+
+                <StyledLibraryContainer>
                     <StyledLibrariesName>
                         React-Router
                     </StyledLibrariesName>
-                </StyledParagraphLink>
-                <StyledParagraphLink>
+                    <StyledLibrariesFrame
+                        src="https://reactjs.org/"
+                    />
+                </StyledLibraryContainer>
+
+                <StyledLibraryContainer>
                     <StyledLibrariesName>
-                        Redux-Saga
+                        Styled Components
                     </StyledLibrariesName>
-                </StyledParagraphLink>
-                <StyledParagraphLink>
+                    <StyledLibrariesFrame
+                        src="https://reactjs.org/"
+                    />
+                </StyledLibraryContainer>
+
+                <StyledLibraryContainer>
                     <StyledLibrariesName>
-                        GitHub pages
+                        Github pages
                     </StyledLibrariesName>
-                </StyledParagraphLink>
-            </StyledLibrariesList>
+                    <StyledLibrariesFrame
+                        src="https://reactjs.org/"
+                    />
+                </StyledLibraryContainer>
+            </StyledLibrariesContainer>
         </StyledSection>
     )
 };
