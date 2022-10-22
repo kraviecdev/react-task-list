@@ -1,55 +1,18 @@
 import { StyledSection } from "../../../common/Section/styled";
-import { StyledLibrariesContainer, StyledLibrariesFrame, StyledLibrariesName, StyledLibraryContainer } from "./styled";
+import Library from "../Library/Index";
+import { ReactIcon } from "../Library/styled";
+import { StyledLibrariesContainer } from "./styled";
 
 
 const AppInfo = () => {
     return (
         <StyledSection additionalSection>
             <StyledLibrariesContainer>
-                <StyledLibraryContainer>
-                    <StyledLibrariesName>
-                        React
-                    </StyledLibrariesName>
-                    <StyledLibrariesFrame
-                        src="https://reactjs.org/"
-                    />
-                </StyledLibraryContainer>
-
-                <StyledLibraryContainer>
-                    <StyledLibrariesName>
-                        React-Redux
-                    </StyledLibrariesName>
-                    <StyledLibrariesFrame
-                        src="https://reactjs.org/"
-                    />
-                </StyledLibraryContainer>
-
-                <StyledLibraryContainer>
-                    <StyledLibrariesName>
-                        React-Router
-                    </StyledLibrariesName>
-                    <StyledLibrariesFrame
-                        src="https://reactjs.org/"
-                    />
-                </StyledLibraryContainer>
-
-                <StyledLibraryContainer>
-                    <StyledLibrariesName>
-                        Styled Components
-                    </StyledLibrariesName>
-                    <StyledLibrariesFrame
-                        src="https://reactjs.org/"
-                    />
-                </StyledLibraryContainer>
-
-                <StyledLibraryContainer>
-                    <StyledLibrariesName>
-                        Github pages
-                    </StyledLibrariesName>
-                    <StyledLibrariesFrame
-                        src="https://reactjs.org/"
-                    />
-                </StyledLibraryContainer>
+                <Library
+                    name={"React"}
+                    icon={<ReactIcon />}
+                    description={"A JavaScript library for building user interfaces"}
+                />
             </StyledLibrariesContainer>
         </StyledSection>
     )
