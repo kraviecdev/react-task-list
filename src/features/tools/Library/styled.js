@@ -1,5 +1,9 @@
 import styled from "styled-components";
-
+import {ReactLogo} from "@styled-icons/fa-brands/ReactLogo";
+import {Redux} from "@styled-icons/simple-icons/Redux";
+import {Reactrouter} from "@styled-icons/simple-icons/Reactrouter";
+import {Githubpages} from "@styled-icons/simple-icons/Githubpages";
+import {Styledcomponents} from "@styled-icons/simple-icons/Styledcomponents";
 
 export const StyledLibraryContainer = styled.div`
     display: flex;
@@ -28,9 +32,27 @@ export const StyledLibraryName = styled.span`
  `;
 
 export const StyledLibraryInfo = styled.div`
-    
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
 `;
 
-export const LibraryIcon = styled.i`
+export const ReactIcon = styled(ReactLogo)`
+    width: 24px;
+`;
 
+export const ReduxIcon = styled(Redux)`
+    width: 24px;
+`;
+
+export const RouterIcon = styled(Reactrouter)`
+    width: 24px;
+`;
+
+export const PagesIcon = styled(Githubpages)`
+    width: 24px;
+`;
+
+export const StyledComponentsIcon = styled(Styledcomponents)`
+    width: 24px;
 `;

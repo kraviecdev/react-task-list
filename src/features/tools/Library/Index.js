@@ -2,8 +2,8 @@ import { StyledLibraryInfo, StyledLibraryName, StyledLibraryContainer } from "./
 
 const Library = ({ name, description, icon }) => (
     <StyledLibraryContainer>
-        <StyledLibraryName>{name}</StyledLibraryName>
         <StyledLibraryInfo>
+            <StyledLibraryName>{name}</StyledLibraryName>
             {icon}
             {description}
         </StyledLibraryInfo>
