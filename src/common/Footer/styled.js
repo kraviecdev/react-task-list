@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as Github } from "./github.svg";
-import { ReactComponent as LinkedIn } from "./linkedin.svg";
+import { Github } from "@styled-icons/bootstrap/Github";
+import { Linkedin } from "@styled-icons/bootstrap/Linkedin";
 
 export const StyledFooter = styled.footer`
     width: 100%;
@@ -75,6 +75,7 @@ export const StyledSocial = styled.li`
 `;
 
 export const GithubIcon = styled(Github)`
+    width: 32px;
     fill: ${({ theme }) => theme.colors.buttonPrimary};
     transition: 1s;
 
@@ -83,7 +84,8 @@ export const GithubIcon = styled(Github)`
     }
 `;
 
-export const LinkedInIcon = styled(LinkedIn)`
+export const LinkedInIcon = styled(Linkedin)`
+    width: 32px;
     fill: ${({ theme }) => theme.colors.buttonPrimary};
     transition: 1s;
 
