@@ -1,14 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tasks list",
+  "name": "React App Tasks list",
   "start_url": ".",
   "icons": [
     {
       "src": "to-do-list.png",
       "type": "image/png"
     }
-  ],
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
