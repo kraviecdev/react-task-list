@@ -4,4 +4,5 @@ export const StyledLibrariesContainer = styled.div`
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 `;
