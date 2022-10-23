@@ -1,12 +1,14 @@
-import { StyledLibraryInfo, StyledLibraryName, StyledLibraryContainer } from "./styled";
+import { StyledLibraryName, StyledLibraryContainer, StyledLibrary, StyledFrontLibrary, StyledBackLibrabry } from "./styled";
 
-const Library = ({ name, description, icon }) => (
+const Library = ({ name, paragraph, icon }) => (
     <StyledLibraryContainer>
-        <StyledLibraryInfo>
-            <StyledLibraryName>{name}</StyledLibraryName>
-            {icon}
-            {description}
-        </StyledLibraryInfo>
+        <StyledLibrary>
+            <StyledFrontLibrary>{icon}</StyledFrontLibrary>
+            <StyledBackLibrabry>
+                <StyledLibraryName>{name}</StyledLibraryName>
+                {paragraph}
+            </StyledBackLibrabry>
+        </StyledLibrary>
     </StyledLibraryContainer>
 );
 
