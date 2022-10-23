@@ -8,9 +8,15 @@ import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 export const StyledLibraryContainer = styled.div`
     position: relative;
     min-width: 240px;
-    min-height: 240px;
+    height: 240px;
     padding: 5px;
     cursor: pointer;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
+        margin: 0 auto 5px;
+        max-width: 150px;
+        height: 200px;
+    }
 `;
 
 export const StyledLibrary = styled.div`
@@ -62,6 +68,11 @@ export const StyledLibraryInfo = styled.span`
     font-size: 16px;
     margin: 5px 0;
     line-height: 24px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 `;
 
 export const ReactIcon = styled(ReactLogo)`
