@@ -10,7 +10,7 @@ export const StyledMenu = styled.nav`
     transition: transform 0.3s ease-in-out;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
-        transform: translateY(-250px);
+        transform: translateY(-100%);
         width: 100%;
         position: absolute;
         right: 0;
@@ -28,7 +28,7 @@ export const StyledMenu = styled.nav`
 
 export const StyledNavBox = styled.div`
     display: inherit;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-grow: 1;
     
@@ -40,23 +40,14 @@ export const StyledNavBox = styled.div`
 
 export const StyledNavItemBox = styled.span`
     padding: 0 7px;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
     transition: 1.2s;
 
     &:hover {
-        border-bottom: 3px solid ${({ theme }) => theme.colors.colorPrimary};
-        border-top: 3px solid ${({ theme }) => theme.colors.colorPrimary};
         color: ${({ theme }) => theme.colors.colorPrimary};
     }
 
     ${({ themeSwitch }) => themeSwitch && css`
         border: none; 
-
-        &:hover {
-            border-bottom: none;
-            border-top: none;
-        }
     `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
@@ -64,11 +55,6 @@ export const StyledNavItemBox = styled.span`
         flex-grow: 1;
         justify-content: center;
         padding: 12px 0;
-
-        &:hover {
-            border-bottom: 3px solid transparent;
-            border-top: 3px solid transparent;
-        }
     }
 `;
 
@@ -82,5 +68,14 @@ export const StyledNavLink = styled(NavLink)`
 
     &:hover{
         color: ${({ theme }) => theme.colors.colorPrimary};
-    }
+    };
+
+    ${({ header }) => header && css`
+        font-size: 32px;
+        color: ${({ theme }) => theme.colors.colorPrimary};
+
+        &:hover {
+            color: ${({ theme }) => theme.colors.buttonPrimary};
+        }
+    `}
 `;

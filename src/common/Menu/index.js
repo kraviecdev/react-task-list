@@ -15,7 +15,7 @@ const Menu = ({ home, tools, about }) => {
                 active={isMenuOpen}
             >
                 <StyledNavBox>
-                    <StyledNavItemBox>{home}</StyledNavItemBox>
+                    {isMenuOpen&&(<StyledNavBox>{home}</StyledNavBox>)}
                     <StyledNavItemBox>{about}</StyledNavItemBox>
                     <StyledNavItemBox>{tools}</StyledNavItemBox>
                 </StyledNavBox>
