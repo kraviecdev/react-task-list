@@ -22,10 +22,10 @@ const App = () => {
             <ThemeProvider theme={isDarkTheme ? dark : light}>
                 <GlobalStyle />
                 <Header
-                    title={"Tasks List"}
+                    title={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
                     navigation={
                         <Menu
-                            home={<StyledNavLink to={"/"}>Home</StyledNavLink>}
+                            home={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
                             about={<StyledNavLink to={"/author"}>About</StyledNavLink>}
                             tools={<StyledNavLink to={"/app_info"}>Application Info</StyledNavLink>}
                         />
