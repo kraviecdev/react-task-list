@@ -9,7 +9,7 @@ export const StyledLibraryContainer = styled.div`
     position: relative;
     min-width: 240px;
     height: 240px;
-    padding: 5px;
+    perspective: 600px;
     cursor: pointer;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
@@ -24,6 +24,7 @@ export const StyledLibrary = styled.div`
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: all .7s ease-in-out;
     background-color: ${({ theme }) => theme.colors.backgroundAddPrimary};
     color: ${({ theme }) => theme.colors.colorPrimary};
@@ -31,7 +32,7 @@ export const StyledLibrary = styled.div`
     border-radius: 25px;
 
     &:hover {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 `;
 
