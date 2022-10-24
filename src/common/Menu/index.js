@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux";
-import { selectIsMenuOpen } from "./menuSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectIsMenuOpen, toggleMenuState } from "./menuSlice";
 
 import ThemeSwitch from "../ThemeSwitch";
 import Burger from "../Burger";
@@ -8,6 +8,8 @@ import { StyledMenu, StyledNavBox, StyledNavItemBox } from "./styled";
 const Menu = ({ home, tools, about }) => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
 
+    const dispatch = useDispatch();
+
     return (
         <>
             <Burger />
@@ -15,9 +17,9 @@ const Menu = ({ home, tools, about }) => {
                 active={isMenuOpen}
             >
                 <StyledNavBox>
-                    {isMenuOpen&&(<StyledNavBox>{home}</StyledNavBox>)}
-                    <StyledNavItemBox>{about}</StyledNavItemBox>
-                    <StyledNavItemBox>{tools}</StyledNavItemBox>
+                    {isMenuOpen&&(<StyledNavBox onClick={() => dispatch(toggleMenuState())}>{home}</StyledNavBox>)}
+                    <StyledNavItemBox onClick={() => dispatch(toggleMenuState())}>{about}</StyledNavItemBox>
+                    <StyledNavItemBox onClick={() => dispatch(toggleMenuState())}>{tools}</StyledNavItemBox>
                 </StyledNavBox>
                 <StyledNavItemBox themeSwitch>
                     <ThemeSwitch />
