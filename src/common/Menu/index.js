@@ -7,7 +7,8 @@ import { StyledMenu, StyledNavBox, StyledNavItemBox } from "./styled";
 
 const Menu = ({ home, tools, about }) => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
-
+    const isMobile = window.innerWidth <= 768 ? true : false;
+    
     const dispatch = useDispatch();
 
     return (
@@ -17,7 +18,7 @@ const Menu = ({ home, tools, about }) => {
                 active={isMenuOpen}
             >
                 <StyledNavBox>
-                    {isMenuOpen&&(<StyledNavBox onClick={() => dispatch(toggleMenuState())}>{home}</StyledNavBox>)}
+                    {isMobile&&(<StyledNavBox onClick={() => dispatch(toggleMenuState())}>{home}</StyledNavBox>)}
                     <StyledNavItemBox onClick={() => dispatch(toggleMenuState())}>{about}</StyledNavItemBox>
                     <StyledNavItemBox onClick={() => dispatch(toggleMenuState())}>{tools}</StyledNavItemBox>
                 </StyledNavBox>
