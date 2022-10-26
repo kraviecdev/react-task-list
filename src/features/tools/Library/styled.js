@@ -8,14 +8,18 @@ import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 export const StyledLibraryContainer = styled.div`
     position: relative;
     min-width: 240px;
-    height: 240px;
+    min-height: 240px;
     perspective: 600px;
     cursor: pointer;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
         margin: 0 auto 5px;
-        max-width: 150px;
-        height: 200px;
+        min-height: 75px;
+        transition: .7s ease-in-out;
+
+        &:hover{
+            min-height: 200px;
+        }
     }
 `;
 
