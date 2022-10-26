@@ -6,6 +6,7 @@ export const StyledMenu = styled.nav`
     padding: 20px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
     transition: transform 0.3s ease-in-out;
 
@@ -28,7 +29,7 @@ export const StyledMenu = styled.nav`
 
 export const StyledNavBox = styled.div`
     display: inherit;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
     
@@ -45,10 +46,6 @@ export const StyledNavItemBox = styled.span`
     &:hover {
         color: ${({ theme }) => theme.colors.colorPrimary};
     }
-
-    ${({ themeSwitch }) => themeSwitch && css`
-        border: none; 
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px){
         display: flex;

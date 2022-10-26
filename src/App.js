@@ -25,7 +25,8 @@ const App = () => {
                     title={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
                     navigation={
                         <Menu
-                            home={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
+                            title={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
+                            home={<StyledNavLink to={"/"}>Home</StyledNavLink>}
                             about={<StyledNavLink to={"/author"}>About</StyledNavLink>}
                             tools={<StyledNavLink to={"/app_info"}>Application Info</StyledNavLink>}
                         />
