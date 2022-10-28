@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { StyledButton } from "../../../common/Buttons/styled";
+import { StyledNavLink } from "../../../common/Menu/styled";
 import {
     selectTasks,
     toggleTaskDone,
@@ -33,7 +34,7 @@ const TasksList = () => {
                     </StyledButton>
                     <StyledContent
                         done={task.done}>
-                        {task.content}
+                       <StyledNavLink exact to={`/task/${task.id}`} >{task.content}</StyledNavLink>
                     </StyledContent>
                     <StyledButton
                         onClick={() => dispatch(removeTask(task.id))}
