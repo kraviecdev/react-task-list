@@ -1,9 +1,12 @@
 import styled, { css } from "styled-components";
+import { Delete } from "@styled-icons/material-outlined/Delete";
+import { Check2 } from "@styled-icons/bootstrap/Check2";
 
 export const StyledButton = styled.button`
     color: ${({ theme }) => theme.colors.colorPrimary};
     background-color: transparent;
     border: none;
+    padding: 5px;
 
     &:hover {
         cursor: pointer;
@@ -44,7 +47,6 @@ export const StyledButton = styled.button`
     `}
 
     ${({ standard }) => standard && css`
-        padding: 5px;
         color: ${({ theme }) => theme.colors.buttonPrimary};
         transition: 1s;
         min-width: 127px;
@@ -108,4 +110,12 @@ export const StyledButtonSection = styled.div`
         align-items: center;
         margin-bottom: 20px;
     }
+`;
+
+export const DeleteIcon = styled(Delete)`
+    width: 20px;
+`;
+
+export const CheckIcon = styled(Check2)`
+    width: 20px;
 `;

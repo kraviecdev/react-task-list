@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { StyledButton } from "../../../common/Buttons/styled";
+import { CheckIcon, DeleteIcon, StyledButton } from "../../../common/Buttons/styled";
 import { StyledNavLink } from "../../../common/Menu/styled";
 import {
     selectTasks,
@@ -26,25 +26,17 @@ const TasksList = () => {
                         done={task.done}
                         complete
                     >
-                        <i
-                            className="material-icons md-24"
-                        >
-                            task_alt
-                        </i>
+                        <CheckIcon />
                     </StyledButton>
                     <StyledContent
                         done={task.done}>
-                       <StyledNavLink exact to={`/task/${task.id}`} >{task.content}</StyledNavLink>
+                       <StyledNavLink taskLink exact to={`/task/${task.id}`} >{task.content}</StyledNavLink>
                     </StyledContent>
                     <StyledButton
                         onClick={() => dispatch(removeTask(task.id))}
                         remove
                     >
-                        <i
-                            className="material-icons md-24"
-                        >
-                            delete
-                        </i>
+                        <DeleteIcon />
                     </StyledButton>
                 </StyledTask>
             ))}
