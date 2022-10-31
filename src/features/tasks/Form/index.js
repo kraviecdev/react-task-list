@@ -2,7 +2,7 @@ import { nanoid } from "@reduxjs/toolkit";
 import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { StyledButton } from "../../../common/Buttons/styled";
-import { addTasks, selectNewTaskContent, handleNewTaskContent } from "../tasksSlice";
+import { addQucikTask, selectNewTaskContent, handleNewTaskContent } from "../tasksSlice";
 import { StyledForm, StyledInput } from "./styled";
 
 const Form = () => {
@@ -18,10 +18,11 @@ const Form = () => {
         if (trimmedNewTaskConent === "") {
             return;
         };
-        dispatch(addTasks({
-            content: trimmedNewTaskConent,
+        dispatch(addQucikTask({
+            title: trimmedNewTaskConent,
             done: false,
             id: nanoid(),
+            content: "",
         }));
         dispatch(handleNewTaskContent(""));
         inputRef.current.focus();

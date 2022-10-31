@@ -30,7 +30,7 @@ const TasksList = () => {
                     </StyledButton>
                     <StyledContent
                         done={task.done}>
-                       <StyledNavLink taskLink exact to={`/task/${task.id}`} >{task.content}</StyledNavLink>
+                       <StyledNavLink taskLink exact to={`/task/${task.id}`} >{task.title}</StyledNavLink>
                     </StyledContent>
                     <StyledButton
                         onClick={() => dispatch(removeTask(task.id))}
