@@ -75,4 +75,8 @@ export const StyledNavLink = styled(NavLink)`
             color: ${({ theme }) => theme.colors.buttonPrimary};
         }
     `}
+
+    ${({ taskLink }) => taskLink && css`
+        font-size: 18px;
+    `}
 `;
