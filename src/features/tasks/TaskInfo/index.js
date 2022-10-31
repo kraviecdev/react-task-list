@@ -1,5 +1,6 @@
 import Container from "../../../common/Container";
 import Section from "../../../common/Section";
+import Paragraph from "../../../common/Paragraph";
 
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -12,8 +13,10 @@ const TaskInfo = () => {
     return (
         <Container>
             <Section
-                title={tasks.content}
-                body={<>{tasks.id}</>}
+                title={tasks.title}
+                body={
+                    <Paragraph description={tasks.content} />
+                }
             />
         </Container>
     );
