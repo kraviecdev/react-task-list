@@ -9,7 +9,7 @@ const tasksSlice = createSlice({
         newTaskContent: "",
     },
     reducers: {
-        addTasks: ({ tasks }, { payload: task }) => {
+        addQucikTask: ({ tasks }, { payload: task }) => {
             tasks.push(task);
         },
         toggleHideDone: state => {
@@ -37,7 +37,7 @@ const tasksSlice = createSlice({
 });
 
 export const {
-    addTasks,
+    addQucikTask,
     toggleHideDone,
     toggleTaskDone,
     removeTask,
