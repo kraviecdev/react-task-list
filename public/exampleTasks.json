@@ -1,17 +1,20 @@
 [
     {
-        "content": "Example Task 1",
+        "title": "Example Task 1",
         "done": false,
-        "id": "5hA9QJQSOoUxxk3wpdjtK"
+        "id": "5hA9QJQSOoUxxk3wpdjtK",
+        "content": "This is description of the Example Task 1"
       },
       {
-        "content": "Example Task 2",
+        "title": "Example Task 2",
         "done": false,
-        "id": "beOwgKqJJP6bsK1E7O_VL"
+        "id": "beOwgKqJJP6bsK1E7O_VL",
+        "content": "This will be editable content of Example Task 2"
       },
       {
-        "content": "Example Task 3",
+        "title": "Example Task 3",
         "done": false,
-        "id": "63XelWoTym8HGWoUdVGrp"
+        "id": "63XelWoTym8HGWoUdVGrp",
+        "content": "This will be list of subtasks for Example Task 3"
       }
 ]
