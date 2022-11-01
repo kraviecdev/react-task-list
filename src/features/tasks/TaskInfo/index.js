@@ -8,14 +8,18 @@ import { getTaskById } from "../tasksSlice";
 
 const TaskInfo = () => {
     const { id } = useParams();
-    const tasks = useSelector(state => getTaskById(state, id));
+    const task = useSelector(state => getTaskById(state, id));
 
     return (
         <Container>
             <Section
-                title={tasks.title}
+                title={task ? task.title : "There is no task with that ID"}
                 body={
-                    <Paragraph description={tasks.content} />
+                    task &&
+                    (<>
+                        <Paragraph description={task.content} />
+                        <Paragraph description={`Done: ${task.done ? "Yes" : "No"}`} />
+                    </>)
                 }
             />
         </Container>
