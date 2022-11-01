@@ -23,18 +23,18 @@ const App = () => {
             <ThemeProvider theme={isDarkTheme ? dark : light}>
                 <GlobalStyle />
                 <Header
-                    title={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
+                    title={<StyledNavLink to={"/tasks"} header>Tasks List</StyledNavLink>}
                     navigation={
                         <Menu
-                            title={<StyledNavLink to={"/"} header>Tasks List</StyledNavLink>}
-                            home={<StyledNavLink to={"/"}>Home</StyledNavLink>}
-                            about={<StyledNavLink to={"/author"}>About</StyledNavLink>}
+                            title={<StyledNavLink to={"/tasks"} header>Tasks List</StyledNavLink>}
+                            home={<StyledNavLink to={"/tasks"}>Tasks</StyledNavLink>}
+                            about={<StyledNavLink to={"/author"}>Author</StyledNavLink>}
                             tools={<StyledNavLink to={"/app_info"}>Application Info</StyledNavLink>}
                         />
                     }
                 />
                 <Switch>
-                    <Route exact path={"/"} >
+                    <Route exact path={"/tasks"} >
                         <Tasks />
                     </Route>
                     <Route path={"/task/:id"} >

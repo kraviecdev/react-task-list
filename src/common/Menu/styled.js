@@ -63,6 +63,11 @@ export const StyledNavLink = styled(NavLink)`
     color: ${({ theme }) => theme.colors.buttonPrimary};
     transition: .7s;
 
+    &.active {
+        color: ${({ theme }) => theme.colors.colorPrimary};
+        text-decoration: underline;
+    };
+
     &:hover{
         color: ${({ theme }) => theme.colors.colorPrimary};
     };
@@ -70,13 +75,19 @@ export const StyledNavLink = styled(NavLink)`
     ${({ header }) => header && css`
         font-size: 32px;
         color: ${({ theme }) => theme.colors.colorPrimary};
+        text-decoration: none;
 
         &:hover {
             color: ${({ theme }) => theme.colors.buttonPrimary};
         }
-    `}
+
+        &.active {
+        color: ${({ theme }) => theme.colors.colorPrimary};
+        text-decoration: none;
+        };
+    `};
 
     ${({ taskLink }) => taskLink && css`
         font-size: 18px;
-    `}
+    `};
 `;
