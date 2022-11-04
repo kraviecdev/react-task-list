@@ -80,8 +80,8 @@ export const StyledButton = styled.button`
         }
 
         &:disabled {
-            color: ${({ theme }) => theme.colors.colorSeconadry};
-            cursor: auto;
+            color: ${({ theme }) => theme.colors.colorPrimary};
+            cursor: not-allowed;
         }
     `}
 

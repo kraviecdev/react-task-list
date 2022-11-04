@@ -13,7 +13,6 @@ export const StyledForm = styled.form`
 export const StyledInput = styled.input`
     padding: 10px;
     width: 100%;
-    border: 2px solid ${({ theme }) => theme.colors.backgroundPrimary};
     background: ${({ theme }) => theme.colors.backgroundAddPrimary};
 
     ${({ search }) => search && css`
