@@ -35,7 +35,7 @@ const Search = () => {
             <StyledInputWrapper>
                 <StyledInput
                     search
-                    placeholder="Filter tasks"
+                    placeholder="What are you looking for?"
                     value={searchValue}
                     onChange={({ target }) => setSearchValue(target.value)}
                 />
