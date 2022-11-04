@@ -98,18 +98,26 @@ export const StyledButton = styled.button`
             transform: scale(1.08);
             filter: brightness(110%);
         }
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+            flex-grow: 1;
+        }
     `}
 `;
 
 export const StyledButtonSection = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 10px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
-    }
+
+        ${({ search }) => search && css`
+        flex-direction: row;
+    `}
+    };
 `;
 
 export const DeleteIcon = styled(Delete)`
