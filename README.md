@@ -7,9 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Updated: 07-06-2022
 
 # Demo
-[**Here you find demo**](https://patrick36212.github.io/react-task-list/)
+[**Here you find demo**](https://patrick36212.github.io/react-task-list/#/tasks)
 
-![Gif](react-task-gif.gif)
+![Img](Tasks_list.png)
 
 ## Technologies used in project
 
@@ -17,18 +17,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - BEM
 - CSS
 - Flex
+- Grid
 - Transition
 - Media query
+- Animations
 - JS/ES6+
 - Immiutability
 - Babel
 - React
+- React-Redux
+- React-Router
 - Styled Components
 - useState
 - useEffect
 - useRef
 - GlobalStyles & Theme
-- React-Redux
 
 ## How to use?
 
