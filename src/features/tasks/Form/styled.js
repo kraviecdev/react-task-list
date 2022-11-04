@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
     padding: 15px;
@@ -13,5 +13,10 @@ export const StyledForm = styled.form`
 export const StyledInput = styled.input`
     padding: 10px;
     width: 100%;
-    border: 2px solid ${({ theme }) => theme.colors.backgroundAddPrimary};
+    border: 2px solid ${({ theme }) => theme.colors.backgroundPrimary};
+    background: ${({ theme }) => theme.colors.backgroundAddPrimary};
+
+    ${({ search }) => search && css`
+        border: none;
+    `}
 `;

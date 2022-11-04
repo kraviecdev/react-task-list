@@ -1,5 +1,7 @@
 import { useHistory, useLocation } from "react-router-dom";
 import { StyledInput } from "../Form/styled";
+import { StyledButton } from "../../../common/Buttons/styled";
+import { StyledSearchWrapper, SearchIcon, StyledInputWrapper } from "./styled";
 
 const Search = () => {
     const location = useLocation();
@@ -19,11 +21,18 @@ const Search = () => {
     }
 
     return (
-        <StyledInput
-            placeholder="Filter tasks"
-            value={query || ""}
-            onChange={onInputChange}
-        />
+        <StyledSearchWrapper>
+            <StyledInputWrapper>
+                <StyledInput
+                    search
+                    placeholder="Filter tasks"
+                    value={query || ""}
+                    onChange={onInputChange}
+                />
+                <SearchIcon />
+            </StyledInputWrapper>
+            <StyledButton form>Search</StyledButton>
+        </StyledSearchWrapper>
     )
 
 }
