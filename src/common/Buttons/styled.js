@@ -12,6 +12,11 @@ export const StyledButton = styled.button`
         cursor: pointer;
     }
 
+    &:disabled {
+            color: ${({ theme }) => theme.colors.colorSeconadry};
+            cursor: auto;
+        }
+
     ${({ complete }) => complete && css`
         transition: .7s;
 
@@ -60,8 +65,8 @@ export const StyledButton = styled.button`
         }
 
         &:disabled {
-            color: ${({ theme }) => theme.colors.colorSeconadry};
-            cursor: auto;
+            color: ${({ theme }) => theme.colors.colorPrimary};
+            cursor: not-allowed;
         }
     `}
 

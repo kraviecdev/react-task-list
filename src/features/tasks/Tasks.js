@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Form from "./Form";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
@@ -10,7 +11,16 @@ import { fetchExampleTasks } from "./tasksSlice";
 
 const Tasks = () => {
   const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
 
+  const loadingTasks = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      dispatch(fetchExampleTasks());
+      setIsLoading(false);
+    }, 1500)
+  }
   return (
     <Container>
       <Section
@@ -20,14 +30,15 @@ const Tasks = () => {
           <StyledButtonSection>
             <StyledButton
               standard
-              onClick={() => dispatch(fetchExampleTasks())}
+              onClick={() => loadingTasks()}
+              disabled={isLoading}
             >
-              Example Tasks
+              {isLoading ? "Loading..." : "Example Tasks"}
             </StyledButton>
           </StyledButtonSection>
         }
       />
-       <Section
+      <Section
         title="Search"
         body={<Search />}
       />
