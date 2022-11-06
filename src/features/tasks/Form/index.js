@@ -38,7 +38,7 @@ const Form = () => {
                 autoFocus
                 value={newTaskContent}
                 type="text"
-                placeholder="What is to do?"
+                placeholder="What needs to be done?"
                 onChange={({ target }) => dispatch(handleNewTaskContent(target.value))}
                 ref={inputRef}
             />
