@@ -17,6 +17,7 @@ export const Info = styled.p`
   margin: 0px 12px 0px 0px;
   text-transform: uppercase;
   display: block;
+  color: ${({ theme }) => theme.colors.buttonPrimary};
 `;
 
 export const SwitchBody = styled.span`

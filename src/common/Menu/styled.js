@@ -57,19 +57,19 @@ export const StyledNavItemBox = styled.span`
 
 export const StyledNavLink = styled(NavLink)`
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.buttonPrimary};
     transition: .7s;
 
     &.active {
-        color: ${({ theme }) => theme.colors.colorPrimary};
         text-decoration: underline;
+        filter: brightness(1.25);
     };
 
     &:hover{
-        color: ${({ theme }) => theme.colors.colorPrimary};
+        filter: brightness(1.25);
     };
 
     ${({ header }) => header && css`
