@@ -9,7 +9,7 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledFooterWrapper = styled.div`
-    max-width: 1420px;
+    max-width: ${({ theme }) => theme.breakpoints.extraLarge}px;
     margin: 30px auto 0;
     padding: 12px;
 
