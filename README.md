@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Demo
 [**Here you find demo**](https://patrick36212.github.io/react-task-list/#/tasks)
 
-![Img](Tasks_list.png)
+![Application image](Tasks_list.PNG)
 
 ## Technologies used in project
 
