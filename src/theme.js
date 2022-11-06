@@ -1,6 +1,6 @@
 const breakpoints = {
     medium: 768,
-    extraLarge: 1300,
+    extraLarge: 1024,
   };
 
 export const light = {
