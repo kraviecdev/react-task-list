@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Updated: 07-06-2022
 
 # Demo
-[**Here you find demo**](https://patrick36212.github.io/react-task-list/#/tasks)
+[**Here you find demo**](https://kraviecdev.github.io/react-task-list/#/tasks)
 
 ![Application image](Tasks_list.PNG)
 
