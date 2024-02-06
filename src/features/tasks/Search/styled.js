@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Search } from "@styled-icons/evaicons-solid/Search";
+import { Search } from "@styled-icons/bootstrap/Search";
 
 export const StyledSearchWrapper = styled.div`
     display: flex;

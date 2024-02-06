@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactLogo } from "@styled-icons/fa-brands/ReactLogo";
+import { ReactLogo } from "@styled-icons/simple-icons/ReactLogo";
 import { Redux } from "@styled-icons/simple-icons/Redux";
 import { Reactrouter } from "@styled-icons/simple-icons/Reactrouter";
 import { Githubpages } from "@styled-icons/simple-icons/Githubpages";

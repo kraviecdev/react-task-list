@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Delete } from "@styled-icons/material-outlined/Delete";
+import { Trash } from "@styled-icons/bootstrap/Trash";
 import { Check2 } from "@styled-icons/bootstrap/Check2";
 
 export const StyledButton = styled.button`
@@ -125,7 +125,7 @@ export const StyledButtonSection = styled.div`
     };
 `;
 
-export const DeleteIcon = styled(Delete)`
+export const DeleteIcon = styled(Trash)`
     width: 20px;
 `;
 
