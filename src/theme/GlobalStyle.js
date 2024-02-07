@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     html {
-        background-color: ${({ theme }) => theme.colors.backgroundAddPrimary};
+        background-color: ${({ theme }) => theme.colors.backgroundSecondary};
         color: ${({theme}) => theme.colors.colorPrimary};
         box-sizing: border-box;  
     }
