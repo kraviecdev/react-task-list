@@ -7,14 +7,14 @@ export const Button = styled.button`
     border: none;
     background: transparent;
     color: inherit;
-    padding: 0px;
+    padding: 0;
 `;
 
 export const Info = styled.p`
   font-weight: bold;
   font-size: 14px;
   line-height: 1.3;
-  margin: 0px 12px 0px 0px;
+  margin: 0 12px 0 0;
   text-transform: uppercase;
   display: block;
   color: ${({ theme }) => theme.colors.buttonPrimary};
@@ -22,7 +22,7 @@ export const Info = styled.p`
 
 export const SwitchBody = styled.span`
   width: 47px;
-  padding: 2.5px;
+  padding: 2px;
   border-radius: 15px;
   background: ${({ theme }) => theme.colors.backgroundPrimary};
   border: 1px solid;
