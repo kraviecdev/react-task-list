@@ -1,16 +1,27 @@
-import { useSelector } from "react-redux";
-import { selectIsMenuOpen } from "../Menu/menuSlice";
-import { StyledHeader, StyledTitle } from "./styled";
+import { Navigation, StyledHeader } from "./styled";
+import { MainHeading } from "../Heading";
+import ThemeSwitch from "./ThemeSwitch";
+import { StyledNavLik } from "../Link";
+import Burger from "./Burger";
+import { useState } from "react";
 
-const Header = ({ title, navigation }) => {
-    const isMenuOpen = useSelector(selectIsMenuOpen); 
+const Header = () => {
+  const [active, setActive] = useState(false);
 
-    return (
-        <StyledHeader>
-            <StyledTitle active={!isMenuOpen} >{title}</StyledTitle>
-            {navigation}
-        </StyledHeader>
-    )
+  return (
+    <StyledHeader>
+      <MainHeading>
+        Tasks list
+      </MainHeading>
+      <Burger active={active} onClick={() => setActive(!active)} />
+      <Navigation active={active}>
+        <StyledNavLik to="/tasks">Tasks</StyledNavLik>
+        <StyledNavLik to="/author">Author</StyledNavLik>
+        <StyledNavLik to="/app_info">Application Info</StyledNavLik>
+        <ThemeSwitch />
+      </Navigation>
+    </StyledHeader>
+  );
 };
 
 export default Header;
