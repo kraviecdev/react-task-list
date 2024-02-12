@@ -19,6 +19,15 @@ export const MainHeading = styled.h1`
     }
 `;
 
+export const Subheading = styled.h2`
+    font-size: 32px;
+    margin: 5px 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+        font-size: 26px;
+    }
+`;
+
 export const AdditionalHeading = styled.h4`
     font-size: 20px;
     text-transform: uppercase;
