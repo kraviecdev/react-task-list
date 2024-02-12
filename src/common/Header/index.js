@@ -15,9 +15,8 @@ const Header = () => {
       </MainHeading>
       <Burger active={active} onClick={() => setActive(!active)} />
       <Navigation active={active}>
-        <StyledNavLik to="/tasks">Tasks</StyledNavLik>
-        <StyledNavLik to="/author">Author</StyledNavLik>
-        <StyledNavLik to="/app_info">Application Info</StyledNavLik>
+        <StyledNavLik onClick={() => setActive(!active)} to="/tasks">Tasks</StyledNavLik>
+        <StyledNavLik onClick={() => setActive(!active)} to="/about">About</StyledNavLik>
         <ThemeSwitch />
       </Navigation>
     </StyledHeader>
