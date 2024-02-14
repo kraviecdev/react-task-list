@@ -6,6 +6,7 @@ export const StyledFooter = styled.footer`
     width: 100%;
     color: ${({ theme }) => theme.colors.colorPrimary};
     background: ${({ theme }) => theme.colors.backgroundPrimary};
+    padding: 12px 0;
 `;
 
 export const GithubIcon = styled(Github)`
@@ -13,7 +14,7 @@ export const GithubIcon = styled(Github)`
     fill: ${({ theme }) => theme.colors.buttonPrimary};
     transition: 1s;
 
-    &:hover{
+    &:hover {
         fill: ${({ theme }) => theme.colors.colorPrimary};
     }
 `;
@@ -23,7 +24,7 @@ export const LinkedInIcon = styled(Linkedin)`
     fill: ${({ theme }) => theme.colors.buttonPrimary};
     transition: 1s;
 
-    &:hover{
+    &:hover {
         fill: ${({ theme }) => theme.colors.colorPrimary};
     }
 `;
