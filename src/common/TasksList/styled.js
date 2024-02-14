@@ -6,8 +6,9 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-    align-items: center;
     display: flex;
+    gap: 10px;
+    align-items: center;
     padding: 5px;
     margin-top: 10px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.colorSecondary};
