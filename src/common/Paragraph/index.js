@@ -17,6 +17,11 @@ export const Paragraph = styled.p`
         line-height: 26px;
     }
 
+    ${({ menu }) => menu && css`
+        font-weight: bold;
+        text-transform: uppercase;
+    `}
+
     ${({ author }) => author && css`
         align-self: flex-end;
     `}
