@@ -5,13 +5,13 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 24px 0;
+    padding: ${({ inner }) => inner ? `16px` : `24px 0`};
     margin: 0 auto;
     width: 100%;
     max-width: ${({ theme }) => theme.breakpoints.extraLarge}px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}px) {
-        padding: 24px 10px;
+        padding: ${({ inner }) => inner ? `10px` : `24px 10px`};
     }
 `;
 
@@ -31,25 +31,4 @@ export const Navigation = styled.nav`
     transition: 0.4s ease-in-out;
 
     transform: ${({ active }) => active ? "translateX(0)" : "translateX(100%)"};
-`;
-
-export const Button = styled.button`
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border: none;
-    background: transparent;
-    color: inherit;
-    padding: 0;
-`;
-
-export const Info = styled.p`
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-    line-height: 1.3;
-    text-transform: uppercase;
-    display: block;
-    color: ${({ theme }) => theme.colors.buttonPrimary};
 `;
