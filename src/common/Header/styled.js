@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: ${({ inner }) => inner ? `16px` : `24px 0`};
+    padding: 24px 0;
     margin: 0 auto;
     width: 100%;
     max-width: ${({ theme }) => theme.breakpoints.extraLarge}px;
@@ -13,6 +13,11 @@ export const StyledHeader = styled.header`
     @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}px) {
         padding: ${({ inner }) => inner ? `10px` : `24px 10px`};
     }
+
+    ${({ inner }) => inner && css`
+    padding: 16px;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.backgroundSecondary};
+`}
 `;
 
 export const Navigation = styled.nav`
