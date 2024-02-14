@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     width: ${({ inner }) => inner ? "max-content" : "100%"};
     max-width: ${({ theme }) => theme.breakpoints.extraLarge}px;
     margin: ${({ inner }) => inner ? "0" : "0 auto"};
+    flex-wrap: ${({ wrap }) => wrap ? "wrap" : "nowrap"};
 
     img {
         max-height: 350px;
