@@ -14,6 +14,11 @@ export const MainHeading = styled.h1`
     color: ${({ theme }) => theme.colors.colorPrimary};
     margin: 0 5px;
 
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         font-size: 32px;
     }
