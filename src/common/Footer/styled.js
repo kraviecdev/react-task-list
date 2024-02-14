@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
     width: 100%;
     color: ${({ theme }) => theme.colors.colorPrimary};
     background: ${({ theme }) => theme.colors.backgroundPrimary};
-    padding: 12px 0;
+    padding: 12px;
 `;
 
 export const GithubIcon = styled(Github)`
