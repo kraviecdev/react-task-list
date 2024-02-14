@@ -10,8 +10,7 @@ const Footer = () => (
     <Wrapper column>
       <Paragraph footer>
         This project was created during the YouCode course. It covers all the techniques learned in this course. This
-        project is made for practice only, not for profit. Creating web-pages and applications is my passion. If you
-        want to check my work, below you can find more info.
+        project is made for practice only, not for profit.
       </Paragraph>
       <AdditionalHeading>Contact me if my work seems interesting to you!</AdditionalHeading>
       <Link href="mailto:pkrawczyk@kraviecdev.com">
