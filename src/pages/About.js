@@ -7,16 +7,16 @@ import { Section } from "../common/Section";
 const About = () => {
   return (
     <Main>
-      <Section>
+      <Section about>
         <Subheading>About</Subheading>
         <Paragraph>
           This Application was made as a part of YouCode course. It represents my knowledge about, <span>React, Redux,
           Redux-Saga and React-Router</span> &#9994; Refreshed with current <span>npm packages</span> &#128187;
         </Paragraph>
       </Section>
-      <Section transparent>
+      <Section transparent about>
         <Subheading>Hello there!</Subheading>
-        <Wrapper inner>
+        <Wrapper wrap>
           <img src={`${process.env.PUBLIC_URL}/img/PK.png`} alt="Patryk Krawczyk photo" />
           <Paragraph author>
             I am <span>CyberSecurity Analyst</span>
