@@ -58,10 +58,10 @@ export const Button = styled.button`
     `}
 
     ${({ form }) => form && css`
+        min-width: 128px;
         background-color: ${({ theme }) => theme.colors.buttonPrimary};
         color: ${({ theme }) => theme.colors.backgroundPrimary};
         border: none;
-        min-width: fit-content;
         padding: 12px;
         transition: 1s;
 
