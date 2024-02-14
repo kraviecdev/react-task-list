@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
-export const StyledBurger = styled.button`
+export const StyledBurger = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 32px;
     height: 32px;
-    background: transparent;
-    border: none;
     cursor: pointer;
-    padding: 0;
     z-index: 2;
 
     &:focus {
