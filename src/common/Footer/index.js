@@ -17,10 +17,10 @@ const Footer = () => (
         pkrawczyk@kraviecdev.com
       </Link>
       <Wrapper inner>
-        <Link href="https://github.com/kraviecdev">
+        <Link target="_blank" href="https://github.com/kraviecdev">
           <GithubIcon />
         </Link>
-        <Link href="https://www.linkedin.com/in/patryk-krawczyk-js">
+        <Link target="_blank" href="https://www.linkedin.com/in/patryk-krawczyk-js">
           <LinkedInIcon />
         </Link>
       </Wrapper>
