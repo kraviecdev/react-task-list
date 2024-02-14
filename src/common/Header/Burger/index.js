@@ -1,5 +1,6 @@
 import { StyledBurger } from "./styled";
-import { Button, Info } from "../styled";
+import { Button } from "../../Button";
+import { Paragraph } from "../../Paragraph";
 
 const Burger = ({ active, onClick }) => {
 
@@ -12,7 +13,7 @@ const Burger = ({ active, onClick }) => {
         <div />
         <div />
       </StyledBurger>
-      <Info>{active ? "close" : "menu"}</Info>
+      <Paragraph menu>{active ? "close" : "menu"}</Paragraph>
     </Button>
   );
 };
