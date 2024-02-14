@@ -1,9 +1,11 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Navigation, StyledHeader } from "./styled";
 import { MainHeading } from "../Heading";
+import { StyledNavLink } from "../Link";
 import ThemeSwitch from "./ThemeSwitch";
-import { StyledNavLik } from "../Link";
 import Burger from "./Burger";
-import { useState } from "react";
+
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -11,12 +13,14 @@ const Header = () => {
   return (
     <StyledHeader>
       <MainHeading>
-        Tasks list
+        <Link to="/tasks">
+          Tasks list
+        </Link>
       </MainHeading>
       <Burger active={active} onClick={() => setActive(!active)} />
       <Navigation active={active}>
-        <StyledNavLik onClick={() => setActive(!active)} to="/tasks">Tasks</StyledNavLik>
-        <StyledNavLik onClick={() => setActive(!active)} to="/about">About</StyledNavLik>
+        <StyledNavLink onClick={() => setActive(!active)} to="/tasks">Tasks</StyledNavLink>
+        <StyledNavLink onClick={() => setActive(!active)} to="/about">About</StyledNavLink>
         <ThemeSwitch />
       </Navigation>
     </StyledHeader>
