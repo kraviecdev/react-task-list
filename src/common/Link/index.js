@@ -21,7 +21,7 @@ export const StyledNavLink = styled(NavLink)`
     cursor: pointer;
     font-size: ${({ content }) => content ? 20 : 32}px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: ${({ done }) => done ? "line-through" : "none"};
     color: ${({ theme }) => theme.colors.buttonPrimary};
     transition: .7s;
 
@@ -52,7 +52,8 @@ export const StyledNavLink = styled(NavLink)`
     ;
     `};
 
-    ${({ taskLink }) => taskLink && css`
+    ${({ task }) => task && css`
         font-size: 18px;
+        flex-grow: 1;
     `};
 `;
