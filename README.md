@@ -12,19 +12,19 @@
 
 ## Technologies used in project
 
--[x] HTML - Semantic & accessible HTML
--[x] CSS - Flex/Media Queries
--[x] JavaScript (ES6+)
--[x] Immutability
--[x] React
--[x] React-Redux
--[x] React-Router
--[x] Styled Components
--[x] React Hooks
--[x] NPM
--[x] Snyk.io
--[x] GlobalStyles & Theme
--[x] This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- HTML - Semantic & accessible HTML
+- CSS - Flex/Media Queries
+- JavaScript (ES6+)
+- Immutability
+- React
+- React-Redux
+- React-Router
+- Styled Components
+    - GlobalStyles & Theme
+- React Hooks
+- NPM
+- Snyk.io
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Functionality
 
