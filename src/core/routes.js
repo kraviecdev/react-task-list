@@ -15,6 +15,10 @@ export const routes = createBrowserRouter([
         element: <Tasks />
       },
       {
+        path: "/tasks",
+        element: <Tasks />
+      },
+      {
         path: "task/:id",
         element: <Task />
       },
