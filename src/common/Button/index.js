@@ -44,6 +44,7 @@ export const Button = styled.button`
     `}
 
     ${({ remove }) => remove && css`
+        color: ${({ theme }) => theme.colors.buttonDelete};
         padding: 5px;
 
         &:hover {
