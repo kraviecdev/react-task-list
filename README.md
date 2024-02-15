@@ -1,39 +1,32 @@
 # Task List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-- Author: Patryk Krawczyk
+- Author: Patryk Krawczyk (kraviecdev)
 - Created: 02-09-2021
-- Updated: 07-06-2022
+- Last update: 15-02-2024
 
 # Demo
-[**Here you find demo**](https://kraviecdev.github.io/react-task-list/#/tasks)
 
-![Application image](Tasks_list.PNG)
+[**Task list - Demo**](https://kraviecdev.github.io/react-task-list/)
+
+![Task List overview](react-task-list.PNG)
 
 ## Technologies used in project
 
-- HTML
-- BEM
-- CSS
-- Flex
-- Grid
-- Transition
-- Media query
-- Animations
-- JS/ES6+
-- Immiutability
-- Babel
-- React
-- React-Redux
-- React-Router
-- Styled Components
-- useState
-- useEffect
-- useRef
-- GlobalStyles & Theme
+-[x] HTML - Semantic & accessible HTML
+-[x] CSS - Flex/Media Queries
+-[x] JavaScript (ES6+)
+-[x] Immutability
+-[x] React
+-[x] React-Redux
+-[x] React-Router
+-[x] Styled Components
+-[x] React Hooks
+-[x] NPM
+-[x] Snyk.io
+-[x] GlobalStyles & Theme
+-[x] This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to use?
+## Functionality
 
 1. In the `What is to do?` input area write down what you want to add to the list
 2. Press the `Add Task` button
@@ -43,6 +36,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 6. You can mark all list items as done by button `Mark all as done`
 7. You can hide all marked as done items by button `Hide done`
 8. You can show all marked as done items by button `Show Done`
+9. In `Filter tasks` you can filter lists by tasks name
+
 ## Available Scripts
 
 In the project directory, you can run:
